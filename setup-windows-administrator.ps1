@@ -2,10 +2,10 @@ $UserName = "User4"
 $Password = ConvertTo-SecureString "User@2026" -AsPlainText -Force
 
 if (-not (Get-LocalUser -Name $UserName -ErrorAction SilentlyContinue)) {
-    New-LocalUser -Name $UserName -Password $Password -FullName "User4" -Description "Administrator account created via script" -PasswordNeverExpires $true
+    New-LocalUser -Name $UserName -Password $Password -FullName "User4" -Description "Administrator account created via script" -AccountNeverExpires -PasswordNeverExpires
     Write-Host "User $UserName created successfully."
 } else {
-    Set-LocalUser -Name $UserName -PasswordNeverExpires $true
+    Set-LocalUser -Name $UserName -AccountNeverExpires -PasswordNeverExpires $true
     Write-Host "User $UserName already exists. Password policy updated."
 }
 
