@@ -17,3 +17,11 @@ To enable verbose status messages during startup, shutdown, logon, and logoff, r
 ```powershell
 iex (irm "https://raw.githubusercontent.com/Pastelmood/Windows-Configuration/main/run-windows-tweak.ps1")
 ```
+
+## Enable Administrator Account
+
+To enable the built-in `Administrator` account and set the password to `User@2026` automatically, run the following command in an elevated PowerShell console:
+
+``powershell
+iex (irm "https://raw.githubusercontent.com/Pastelmood/Windows-Configuration/main/enable-windows-administrator.ps1")
+``
