@@ -22,6 +22,6 @@ iex (irm "https://raw.githubusercontent.com/Pastelmood/Windows-Configuration/mai
 
 To enable the built-in `Administrator` account and set the password to `User@2026` automatically, run the following command in an elevated PowerShell console:
 
-``powershell
+```powershell
 iex (irm "https://raw.githubusercontent.com/Pastelmood/Windows-Configuration/main/enable-windows-administrator.ps1")
-``
+```
